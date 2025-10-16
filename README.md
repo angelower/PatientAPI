@@ -143,13 +143,10 @@ URL: http://127.0.0.1:8000/api/patients/1/
 
 ### 8. Estructura del Proyecto
 
-patients-management-api/
-├── manage.py
-├── requirements.txt
-├── .env                          # Variables de entorno
-├── patients_api/                 # App principal
-│   ├── models.py                 # Modelos de datos
-│   ├── views.py                  # Vistas de la API
-│   ├── urls.py                   # Rutas de la API
-│   └── serializers.py            # Serializadores
-└── settings.py                   # Configuración del proyecto
+- **`manage.py`**: Script principal para administrar el proyecto Django
+- **`requirements.txt`**: Lista de dependencias y paquetes Python necesarios
+- **`.env`**: Variables de entorno sensibles (base de datos, secret keys)
+- **`patients_api/models.py`**: Define el modelo `Patient` con campos: name, lastname, age, insurance
+- **`patients_api/views.py`**: Contiene la lógica del CRUD (GET, POST, PUT, DELETE)
+- **`patients_api/urls.py`**: Define los endpoints de la API (`/api/patients/`, `/api/patients/<id>/`)
+- **`project/settings.py`**: Configuración de Django, base de datos, apps instaladas
